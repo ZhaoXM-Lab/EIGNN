@@ -1,0 +1,11 @@
+.idea/
+.ipynb_checkpoints/
+archive/
+results/
+saved_model/
+*.pth
+__pycache__/
+*.py[cod]
+*$py.class
+*.pkl
+*.gz
