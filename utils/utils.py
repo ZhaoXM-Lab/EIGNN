@@ -3,10 +3,16 @@ import os
 import torch
 import logging
 import re
-from models import EIGNN, RF, PRS, SVM, LR, NNP, APOE
+from models import EIGNN, RF, PRS, SVM, LR, NNP
+from models import LDMIL, DAMIDL, mixer3d
+from models import MADDi
+from models import ADCNN
+from models import AlzCLIPWrapper
+
 
 method_map = {'EIGNN': EIGNN, 'RF': RF, 'PRS': PRS, 'SVM': SVM, 'LR': LR,
-              'NNP': NNP, 'APOE': APOE}
+              'NNP': NNP, 'LDMIL': LDMIL, 'DAMIDL': DAMIDL,
+              '3D-Mixer': mixer3d, 'MADDi': MADDi, 'ADCNN': ADCNN, 'AlzCLIP': AlzCLIPWrapper}
 
 
 def mk_dirs(basedir):
